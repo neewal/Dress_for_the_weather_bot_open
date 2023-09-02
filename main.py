@@ -20,7 +20,7 @@ chat_id = 'chat_id'
 
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
-    bot.send_message(chat_id, """\
+    bot.reply_to(message, """\
 здравствуйте. 
 я ваш бот персональный помощник, что я умею:
   • к сожелению ничего кроме показания погоды(
