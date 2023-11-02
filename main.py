@@ -50,9 +50,9 @@ def morning():
     f = '<Response [200]>'
 
     if str(responce) == str(f):
-        logging.info('Подключение к серверам google прошло успешно ' + '(' + str(responce) + ')')
+        logging.info('Подключение прошло успешно ' + '(' + str(responce) + ')')
     else:
-        logging.error('Поключение к серверам google прошло неудачно, не удалось подключится!' + '(' + str(responce) + ')', exc_info=True)
+        logging.error('Поключение прошло неудачно, не удалось подключится!' + '(' + str(responce) + ')', exc_info=True)
 
 
     soup = BeautifulSoup(responce.text, "html.parser")
